@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IEMobile 7 ]> <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)]><!--> 
+<html class="no-js" lang="en"> 
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    
+    <title>Riloadr: A responsive images loader</title>
+    
+    <!-- Mobile viewport optimization - Required!!-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="0">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Recommended CSS styles --> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Flag to use the jQuery version of Riloadr (only useful for this demo) -->
+    <script type="text/javascript">var usejQueryVersion = true;</script>
+    
+    <!-- Include RequireJS and load main.js to set up the image groups --> 
+    <script type="text/javascript" data-main="scripts/main" src="scripts/require.js"></script>
+</head>
+<body>
+
+    <h1>Riloadr Demo: jQuery version and <a href="http://requirejs.org/">RequireJS</a></h1>
+    <p>Open this page in different browsers/devices to watch Riloadr in action!!</p>
+    <p>Inspect the source code to learn how to use Riloadr or <a href="https://github.com/tubalmartin/riloadr">read the docs at Github</a>.</p>
+    <ul>
+        <li><a href="index.html">Standalone version</a></li>
+        <li><a href="index.requirejs.html">Standalone version and RequireJS</a></li>
+        <li><a href="index.curl.html">Standalone version and curl</a></li>
+        <li><a href="index.jquery.html">jQuery version</a></li>
+        <li><a href="index.jquery.requirejs.html">jQuery version and RequireJS</a></li>
+        <li><a href="index.jquery.curl.html">jQuery version and curl</a></li>
+    </ul>
+    
+    
+    
+    <h2>Group 1</h2>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        <img class="group1" alt="group1 - Waimea" data-src="waimea_{breakpoint-name}.jpg">
+        <noscript>
+            <img alt="Waimea" src="images/waimea_320.jpg">
+        </noscript>
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        <img class="group1" alt="group1 - Txanpa at Waimea" data-src="txanpa_{breakpoint-name}.jpg">
+        <noscript>
+            <img alt="Txanpa at Waimea" src="images/txanpa_320.jpg">
+        </noscript>
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  
+  
+   
+    <h2>Group 2</h2>
+    <div id="group2">
+        <p>
+            <img class="responsive" alt="responsive - Cocoa Beach" data-src="cocoa.jpg">
+            <noscript>
+                <img alt="Cocoa Beach" src="images/240/cocoa.jpg">
+            </noscript>
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            <img class="responsive" alt="responsive - La Jolla" data-src="jolla.jpg">
+            <noscript>
+                <img alt="La Jolla" src="images/240/jolla.jpg">
+            </noscript>
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            <img class="responsive" alt="responsive - Morro Rocks" data-src="morro.jpg">
+            <noscript>
+                <img alt="Morro Rocks" src="images/240/morro.jpg">
+            </noscript>
+        </p>
+        <button id="group2-button" type="button">Add images to group 2</button>
+    </div>
+    
+    
+    
+    
+    <h2>Group 3</h2>
+    <p>
+        <img class="mygroup3" alt="mygroup3 - Tahiti" data-src="tahiti.jpg">
+        <noscript>
+            <img alt="Tahiti" src="images/240/tahiti.jpg">
+        </noscript>
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        <img class="mygroup3" alt="mygroup3 - Waimea from beach" data-base="images/waimea_beach/" data-src="glup_{breakpoint-name}.jpg">
+        <noscript>
+            <img alt="Waimea from beach" src="images/waimea_beach/glup_240.jpg">
+        </noscript>
+    </p>
+    
+    
+    
+    <h2>Group 4</h2>
+    <div id="group4"></div>
+    <button id="group4-button" type="button">Add images to group 4</button>
+</body>
+</html>
