@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<style>
+
+#wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#show {
+	width:600px;
+	padding: 10px 0 10px 0;
+	height:20px;
+	text-decoration:underline;
+}
+
+#show:hover {
+	cursor: pointer;
+}
+
+#transcript {
+	width:600px;
+	height: 300px;
+	margin:0;
+	border-bottom: 1px solid black;
+	overflow:auto;
+	display:none;
+}
+
+hr {
+	width: 600px;
+	margin: 0;
+	padding:0;
+}
+
+#arrow {
+	float:right;
+	width:5px; height:5px;
+	margin: 7px 5px 0 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+.one {
+	border-top: none;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: none;
+}
+
+.two {
+	border-top: 1px solid black;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1px solid black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="show">
+Show Transcript <div id="arrow" class="one"></div>
+</div>
+
+<hr/>
+
+<div id="transcript">
+<p>Silk Street.</p>
+<p>In 20 yards (avoiding the burning vehicle) turn right.</p>
+<p>In 25 yards, turn left. Keep right. Admire the Wing Yip on your right.</p>
+<p>Avoid crash. Please remain calm, the authorities have been informed and are on their way to assist you.</p>
+<p>Recalculating.</p>
+<p>In 100 yards, board ferry.</p>
+<p>Recalculating.</p>
+<p>Keep left, then keep right, then keep right, keep left.</p>
+<p>You have reached your destination.</p>
+<p>Lever Street.</p>
+</div>
+
+</div><!--WRAPPER-->
+
+<script>
+
+$('#show').click(function(){
+	$('#transcript').slideToggle(200);	
+	$('#arrow').toggleClass('one two');
+});
+
+</script>
+
+</body>
+</html>

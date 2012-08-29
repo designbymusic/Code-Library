@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Google Maps</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script type="text/javascript">
+
+		function buildMapLink() {
+			if (Modernizr.geolocation) {
+				navigator.geolocation.getCurrentPosition(function(position){
+					$('#maplink_directions').attr('href', mapLink(position.coords.latitude, position.coords.longitude));
+				});
+			}else{
+				$('#maplink p').text('Your broswer does not support Geolocation')
+			}
+		}
+		function returnPosition(position){
+			return position.coords;
+		}
+		function mapLink(lat, longitude) {
+		    return 'http://maps.google.com/maps?saddr='+escape(lat+','+ longitude)+'&daddr=Manchester+M1+1DZ,+United+Kingdom';
+		}
+
+		$(document).ready(function(){
+			buildMapLink();
+		});
+
+	</script>	
+</head>
+
+<body>
+	<div id="maplink">
+		<p><a href="#" id="maplink_directions" target="_blank">Get directions</a>.</p>
+	</div>
+</body>
+</html>
