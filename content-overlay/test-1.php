@@ -81,6 +81,7 @@
                                         var frameContent = getContent($($trigger).attr('href'), function(data){
                                             var overlay_content = '<div id="overlay-content">'+data+'</div>';
                                             $(overlay_content).hide().appendTo('#overlay').fadeIn(o.animateSpeed, function(){
+                                                resizeSlides();
                                                 initSlides();
                                             });
                                         });
@@ -110,10 +111,17 @@
 
                             // The ajax call to get the content of the requested page
                             function resizeSlides(){
+                                var $w_width = $(window).width();
+                                var $w_height = $(window).height();
                                 $('.cycle-slideshow, .content-frame').css({
                                     'height' : $(window).height(),
                                     'width' : $(window).width()
                                 });
+                                if ($w_width/$w_height > 1.778){
+                                    $('video').css({ width : $w_width, height : $w_width/16*9});
+                                }else {
+                                    $('video').css({ width : $w_height/9*16, height : $w_height});
+                                }
                             }
 
                             // Init the slideshow
