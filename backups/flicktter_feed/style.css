@@ -1,0 +1,31 @@
+* {
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+.tweetList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	display: block;
+	width: 194px;
+	padding: 3px;
+	float: left;
+	margin: 3px;
+	background: orange;
+	overflow: hidden;
+}
+
+.box, .box a {
+	color: white;
+}
+
+.tweetList p {
+	margin: 0;
+}
+
+.tweetList small {
+	display: block;
+}

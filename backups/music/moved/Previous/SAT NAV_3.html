@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>We've Moved</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<style>
+
+body, html, #map {
+	margin:0;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+
+#sidebar {
+	width:30%;
+	min-width:300px;
+	padding: 0 30px 0 30px;
+	height: 100%;
+	position: fixed;
+	top: 0; left:0;
+	z-index: +100;
+	background-color: white;
+}
+
+#musicLogo {
+	width: 162px; height:50px;
+	text-indent: -999px;
+	background: top left no-repeat url(img/logo.jpg) ;
+	margin-top: 30px;
+}
+
+h1 {
+	font-family:Garamond, Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-size:76px;
+	font-weight:normal;
+	line-height:0.8em;
+}
+
+h6, p, a {
+	font-family:Garamond, Georgia, 'Times New Roman', Times, serif;
+	font-size:17px;
+	color: #000;
+	outline:none;
+	text-decoration:none;
+}
+
+h6, a {
+	font-variant:small-caps;
+	text-decoration:underline;
+}
+	
+	
+
+</style>
+
+</head>
+
+<body>
+
+<div id="sidebar">
+
+    <div id="musicLogo">MUSIC</div>
+    
+    <h1>You have reached our destination.</h1>
+    
+    <h6>click below to play audio</h6>
+    
+    <audio controls="controls">
+      <source src="audio/sound.ogg" type="audio/ogg" />
+      <source src="audio/sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element. Please Update.
+    </audio>
+    
+    <p>Music have moved. Please update your address book.</p>
+    
+    <p>Third Floor<br/>24 Lever Street<br/>Manchester M1 1DZ<br/>+44(0)161 237 5600</p>
+    
+    <a href="">hello@designbymusic.com</a><br/>
+    <a href="">www.designbymusic.com</a><br/>
+    <br/>
+    <a href="">Click here for text version</a>
+
+</div><!--SIDEBAR-->
+
+<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Silk+St,+Manchester+M4,+United+Kingdom&amp;daddr=Lever+St,+Manchester,+UK&amp;hl=en&amp;geocode=FR4jMAMdpQXe_yknAmrXurF7SDGaH7IP4oD3kA%3BFa0TMAMdMund_ymNV9xWubF7SDHD_DcWMk_2vA&amp;aq=&amp;sll=53.482415,-2.234066&amp;sspn=0.012437,0.018711&amp;g=lever+street+manchester&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=53.484637,-2.231469&amp;spn=0.004469,0.00912&amp;z=16&amp;output=embed"></iframe>
+
+
+</body>
+</html>

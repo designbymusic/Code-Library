@@ -1,0 +1,12 @@
+audio,
+h6,
+a#textVersion{
+	display: none!important;
+}
+#right{
+	float: right;
+	margin-bottom: 50px;
+}
+#right p{
+	font-size: 14px;
+}
