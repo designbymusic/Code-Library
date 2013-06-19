@@ -2,14 +2,14 @@
 
 require_once('./config.php');
 
+
 /*
  * Instagram
- * @desc Basic methods used to connect to the Instagram API
+ * @desc A very basic class to conect to the Instagram API
  */
-   function debug($a) {
-        echo '<pre>' . print_r($a, true) . '</pre>';
-    }
+
 class Instagram {
+
     /**
      *      To get the code, vsit the following URL, replacing the parameters
      *      https://api.instagram.com/oauth/authorize/?client_id=$client_id&redirect_uri=$redirect_uri&response_type=code
@@ -39,6 +39,9 @@ class Instagram {
      */
     private $api_name       = 'instagram';
     private $cache_length   = 6000;
+    private $cache_path      = 'apis/instagram/cache';
+
+
 
     /**
      * __construct()
@@ -50,41 +53,66 @@ class Instagram {
 
 
     /**
-     * Get the photos from users' own feed
+     * Get the photos from users' own photo feed
+     *
+     * @desc    Initializes the cache if the apiFileCache class exists (is included)
+     *          Fetches the new data if the cache has not been initialised
+     *          If cache is initilaised, then writes newly fethed data to the cache
      * @return type
      */
     public function UserGetPhotos() {
-        $this->cache = new apiFileCache($this->api_name, 'userphotos',$this->cache_length);
-
+        $this->_initCache('userphotos');
         $feed = $this->cache->fetchCacheData('userphotos');
-
         if (!$feed) {
-            $feed = $this->_curlDownload('https://api.instagram.com/v1/users/' . $this->user_id . '/media/recent/?access_token=' . $this->access_token . '&count=' . $this->itemcount);
+            $feed = json_decode($this->_curlDownload('https://api.instagram.com/v1/users/' . $this->user_id . '/media/recent/?access_token=' . $this->access_token . '&count=' . $this->itemcount));
+            $this->cache->writeCacheData($feed, 'userphotos');
+        }
+        return $this->_normalizeData($feed);
+    }
+    /**
+     * Get the photos from users' feed of ho he is following
+     * @todo Need to query all pages to get all photos
+     * @return type
+     */
+    public function getRecentFromFeed() {
+        $this->_initCache('userfeed');
+        $feed = $this->cache->fetchCacheData('userfeed');
+        if (!$cache) {
+            $feed = json_decode($this->_curlDownload('https://api.instagram.com/v1/users/self/feed?access_token='.$this->access_token.'&count='.$this->itemcount));
             $this->cache->writeCacheData($feed, 'userfeed');
         }
         return $this->_normalizeData($feed);
     }
 
+    private function _initCache($type){
+        $feed = false;
+        try {
+            $this->cache = new apiFileCache($this->api_name, $type,$this->cache_length, $this->cache_path);
+        } catch (Exception $e) {
+            echo $e->getMessage(), "\n";
+        }
+
+        #}else{
+            //echo 'Please make sure you have included '
+        #}
+        return $feed;
+    }
+
     private function _normalizeData($feed){
-        $feed = json_decode($feed);
-
         $normalized_data = array();
-
         $i = 0;
 
         foreach ($feed->data as $data){
             $normalized_data[$i]['pub_date']    = $data->created_time;
             $normalized_data[$i]['data']        = $data;
             $normalized_data[$i]['type']        = $this->api_name;
-
             $i++;
         }
 
         return $normalized_data;
     }
 
-
-    /** ------------------------------------------------------------------------
+    /**
      * Utility functions
       ------------------------------------------------------------------------- */
     /*
@@ -110,31 +138,10 @@ class Instagram {
 
         return $output;
     }
-
-
-
-}
-
-class apiFileCache{
-
-    private $cache_path = 'apis/instagram/cache';
-
-    public function __construct($api_name,$type,$cache_length){
-
-        $this->cache_file   = $_SERVER['DOCUMENT_ROOT'].DS.$this->cache_path.DS.$api_name.'.'.$type.'.cache';
-        $this->cache_length = $cache_length;
+    function debug($a) {
+        echo '<pre>' . print_r($a, true) . '</pre>';
     }
 
-    public function fetchCacheData(){
-        if(file_exists($this->cache_file) && filemtime($this->cache_file) > time() - $this->cache_length){
-            return file_get_contents($this->cache_file);
-        }else{
-            return false;
-        }
-    }
-    public function writeCacheData($feed){
-        file_put_contents($this->cache_file,$feed);
-    }
 
 }
 
