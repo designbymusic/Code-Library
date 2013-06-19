@@ -8,4 +8,4 @@ Various resources for internal use in projects for Music.
 
 ####apis
 
-Basic libraies for conencting to different APIS.
+Basic libraries for connecting to different APIS.
