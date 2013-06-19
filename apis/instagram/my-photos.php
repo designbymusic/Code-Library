@@ -1,8 +1,6 @@
 <?php
-require_once('./Instagram/InstagramUtils.class.php');
 require_once('./Instagram/Instagram.class.php');
 
-$Utils      = new InstagramUtils();
 $Instagram  = new Instagram(-1);
 $photos     = $Instagram->UserGetPhotos();
 ?>

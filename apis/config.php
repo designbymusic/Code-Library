@@ -8,7 +8,7 @@ defined('DS') or define('DS',DIRECTORY_SEPARATOR);
 
 function __autoload($name) {
     try{
-        include_once($name.'.php');
+        include_once('classes'.DS.$name.'.php');
     }catch(Exception $e){
         throw new Exception("Unable to load $name.");
     }

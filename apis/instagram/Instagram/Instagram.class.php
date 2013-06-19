@@ -1,6 +1,6 @@
 <?php
 
-require_once('./config.php');
+require_once('../config.php');
 
 /*
  * Instagram
@@ -38,7 +38,7 @@ class Instagram {
      */
     private $api_name       = 'instagram';
     private $cache_length   = 6000;
-    private $cache_path      = 'apis/instagram/cache';
+    private $cache_path      = 'apis/cache';
 
 
 
