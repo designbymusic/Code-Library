@@ -1,5 +1,5 @@
 <?php
-require_once('./Instagram/Instagram.class.php');
+require_once('./classes/Instagram.class.php');
 
 $Instagram  = new Instagram(-1);
 $photos     = $Instagram->UserGetPhotos();
