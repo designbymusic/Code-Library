@@ -32,6 +32,7 @@ class Instagram {
     private $client_secret = '97437a9cbbef4dab80e7affed7a56ee8';
     private $user_id = '989139'; // Can be obtained here http://jelled.com/instagram/lookup-user-id
     private $redirect_uri = 'http://sandbox.localhost/apis/instagram/callback.php';
+    private $itemcount = -1; // Unlimited
 
     /**
      *     Utility properties
@@ -44,8 +45,7 @@ class Instagram {
      * @param type $itemcount
      */
     public function __construct($itemcount) {
-        $this->itemcount = -1;
-
+        $this->itemcount = $itemcount;
     }
 
 
