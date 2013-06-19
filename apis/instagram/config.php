@@ -7,7 +7,6 @@ DEFINE('MYSQL_PASS', 'password');
 defined('DS') or define('DS',DIRECTORY_SEPARATOR);
 
 function __autoload($name) {
-    echo "Want to load $name.\n";
     try{
         include_once($name.'.php');
     }catch(Exception $e){

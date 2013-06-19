@@ -2,7 +2,6 @@
 
 require_once('./config.php');
 
-
 /*
  * Instagram
  * @desc A very basic class to conect to the Instagram API
@@ -46,7 +45,7 @@ class Instagram {
     /**
      * __construct()
      * @param type $itemcount
-     */
+    */
     public function __construct($itemcount) {
         $this->itemcount = $itemcount;
     }
@@ -64,41 +63,47 @@ class Instagram {
         $this->_initCache('userphotos');
         $feed = $this->cache->fetchCacheData('userphotos');
         if (!$feed) {
-            $feed = json_decode($this->_curlDownload('https://api.instagram.com/v1/users/' . $this->user_id . '/media/recent/?access_token=' . $this->access_token . '&count=' . $this->itemcount));
+            $feed = $this->_curlDownload('https://api.instagram.com/v1/users/' . $this->user_id . '/media/recent/?access_token=' . $this->access_token . '&count=' . $this->itemcount);
             $this->cache->writeCacheData($feed, 'userphotos');
         }
         return $this->_normalizeData($feed);
     }
     /**
-     * Get the photos from users' feed of ho he is following
+     * Get the photos from users' feed of who the currently authenticated user is following
      * @todo Need to query all pages to get all photos
      * @return type
      */
     public function getRecentFromFeed() {
         $this->_initCache('userfeed');
         $feed = $this->cache->fetchCacheData('userfeed');
+
         if (!$cache) {
-            $feed = json_decode($this->_curlDownload('https://api.instagram.com/v1/users/self/feed?access_token='.$this->access_token.'&count='.$this->itemcount));
-            $this->cache->writeCacheData($feed, 'userfeed');
+            $feed = $this->_curlDownload('https://api.instagram.com/v1/users/self/feed?access_token='.$this->access_token.'&count='.$this->itemcount);
+            $this->cache->writeCacheData(json_encode($feed), 'userfeed');
         }
         return $this->_normalizeData($feed);
     }
-
+    /**
+     * Initialise the cache class to enable file caching
+     * @return objects
+     */
     private function _initCache($type){
         $feed = false;
         try {
             $this->cache = new apiFileCache($this->api_name, $type,$this->cache_length, $this->cache_path);
         } catch (Exception $e) {
             echo $e->getMessage(), "\n";
+            exit();
         }
-
-        #}else{
-            //echo 'Please make sure you have included '
-        #}
         return $feed;
     }
 
+    /**
+     * Convert the data to a set format
+     * @return array
+     */
     private function _normalizeData($feed){
+        $feed = json_decode($feed);
         $normalized_data = array();
         $i = 0;
 
@@ -138,11 +143,14 @@ class Instagram {
 
         return $output;
     }
+    /*
+     * @desc Debug and array or object
+     * @return void
+     *
+     */
     function debug($a) {
         echo '<pre>' . print_r($a, true) . '</pre>';
     }
-
-
 }
 
 
