@@ -40,8 +40,6 @@ class Instagram {
     private $cache_length   = 6000;
     private $cache_path      = 'apis/cache';
 
-
-
     /**
      * __construct()
      * @param type $itemcount
