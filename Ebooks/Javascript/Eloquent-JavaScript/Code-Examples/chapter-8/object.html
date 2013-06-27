@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic objects</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div></div>
+
+        <script>
+
+            /**
+             * Here we define the Person function
+             */
+
+            function Person(adjective) {
+                this.testprop  = false;
+                this.adjective = adjective;
+                this.speak = function(line) {
+                    console.log("The ", this.adjective, " person says '", line, "'");
+                };
+            }
+
+            var killerPerson = new Person("violent");   // The constructor
+            killerPerson.speak('hello world');          // Call a method of the object, passing our own arguments
+            Person.prototype.testprop = 'notfalse';     // Testing updating the prototype's properties, that will not effect the same
+                                                        // property of the constructed object if defined
+                                                        // This does mean that the prototype can be used at any time to add new properties and methods to all objects based on it.
+            console.log(killerPerson.testprop);         // Test the objects' properties'
+            console.log(Person.prototype.testprop);         // Test the objects' prototype's properties
+            console.log(killerPerson.testprop);         // The original value of the object remains the same,
+
+            Person.prototype.dance = function(line){
+                console.log("Inside I'm dancing because I am "+this.adjective+" "+line);
+            }
+
+            var nicePerson = new Person('nice');
+            nicePerson.dance('all the time');
+        </script>
+
+    </body>
+</html>

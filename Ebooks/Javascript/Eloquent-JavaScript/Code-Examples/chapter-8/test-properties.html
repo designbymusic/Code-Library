@@ -1,0 +1,68 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Object Properties</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div></div>
+
+        <script>
+
+            /**
+             *      Here we define the Person function
+             *      to be used as the object constructor
+             */
+
+            function Person(adjective) {
+                this.testprop  = false;
+                this.adjective = adjective;
+                this.speak = function(line) {
+                    console.log("The ", this.adjective, " person says '", line, "'");
+                };
+            }
+
+            /**
+             *      Abstracted loop to loop through an
+             *      object and get all properites
+             */
+            function forEachIn(object, action) {
+                for (var property in object) {
+                    if (Object.prototype.hasOwnProperty.call(object, property)){
+                        action(property, object[property]);
+                    }
+                }
+            }
+
+            /**
+             *      Test object with dummy properties (key/value pairs)
+             */
+            var testObject = {
+                "Fat Igor": 'numpty',
+                "Fireball": 'hero'
+            };
+
+            /**
+             *      Call the loop to log all the properties of the object
+             */
+            forEachIn(testObject, function(name, value) {
+                console.log("Key: ", name, " Value: ", value);
+            });
+
+            /**
+             * test overridding of hasOwnProperty (Will not work in IE8)
+             */
+            testObject.hasOwnProperty = 'OwnProperty';
+
+            forEachIn(testObject, function(name, value) {
+                console.log("Key: ", name, " Value: ", value);
+            });
+
+        </script>
+
+    </body>
+</html>
