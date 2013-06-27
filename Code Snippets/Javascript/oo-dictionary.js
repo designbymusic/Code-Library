@@ -1,4 +1,10 @@
 /**
+ *
+ *      Dictionary functions used to accurately get a list of and manipulate a set of object's properties
+ *      See /Ebooks/Javascript/Eloquent-JavaScript/Code-Examples/chapter-8/
+ */
+
+/**
 *  Utility loop function to check if an object has a property
 */
 function forEachPropertyInObject(object, action) {
