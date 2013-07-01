@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+            function bind(func, object) {
+                return function(){
+                    return func.apply(object, arguments);
+                };
+            }
+
+            var testArray = ["A","B","C"];
+            var pushTest = bind(testArray.push, testArray);
+            pushTest("A");
+            pushTest("B");
+            console.log(testArray);
+
+            // This is prefered as more abstract
+            function method(object, name) {
+                return function() {
+                    return object[name].apply(object, arguments);
+                };
+            }
+
+            var pushTest = method(testArray, "push");
+            pushTest("B");
+            console.log(testArray);
+        </script>
+    </body>
+</html>

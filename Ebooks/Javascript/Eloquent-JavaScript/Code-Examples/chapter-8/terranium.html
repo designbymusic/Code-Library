@@ -1,0 +1,402 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terranium</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <script>
+            /** Utilities
+             *---------------------------------------------------------------**/
+
+            /**
+             *  Utility loop function
+             */
+            function forEachIn(object, action) {
+                for (var property in object) {
+                    if (Object.prototype.hasOwnProperty.call(object, property))
+                        action(property, object[property]);
+                }
+            }
+            /*
+             *  forEach()
+             *  @desc   Utility function to prevent the need to continually write out for each loops.
+             *          when needing to apply a function to an array of elements
+             *  @param  array       array    Array to which we want to apply the function
+             *  @param  object      offset_top  The offset from the top of the viewport
+             *  @param  object      offset_bottom  The offset from the bottom of the viewport
+             *  @param  function    callback  Function to call after completion
+             */
+            function forEach(array, action) {
+                for (var i = 0; i < array.length; i++){
+                    action(array[i]);
+                }
+            }
+            /**
+             * A constructor and a prototype specifically for situations where
+             * we want to approach an object as just a set of properties
+             */
+            /*
+             * Initialise the function
+             * If values are passed to the constuctor, assign them as properties
+             * or just create the empty object with inherent prototype properties
+             */
+            function Dictionary(startValues) {
+                this.values = startValues || {};
+            }
+            /**
+             * Used to store values in the object
+             */
+            Dictionary.prototype.store = function(name, value) {
+                this.values[name] = value;
+            };
+            /**
+             * Look up the vaue of a given property
+             */
+            Dictionary.prototype.lookup = function(name) {
+                return this.values[name];
+            };
+            /**
+             * Check if the object contains a property
+             */
+            Dictionary.prototype.contains = function(name) {
+                return Object.prototype.hasOwnProperty.call(this.values, name) &&
+                    Object.prototype.propertyIsEnumerable.call(this.values, name);
+            };
+            /**
+             * Used to store values in the object
+             */
+            Dictionary.prototype.each = function(action) {
+                forEachIn(this.values, action);
+            };
+
+            // This is prefered as more abstract
+            function method(object, name) {
+                return function() {
+                    return object[name].apply(object, arguments);
+                };
+            }
+            function bind(func, object) {
+                return function(){
+                    return func.apply(object, arguments);
+                };
+            }
+            /** END Utilities
+             *---------------------------------------------------------------**/
+
+            /**
+             *  A terrarium can be defined with a 'plan', which is an array of strings.
+             *  We could have used a single string, but because JavaScript strings
+             *  must stay on a single line it would have been a lot harder to type.
+             *
+             *  The "#" characters are used to represent the walls of the terrarium
+             *  (and the ornamental rocks lying in it), the "o"s represent bugs, and
+             *  the spaces are, as you might have guessed, empty space.
+             *
+             */
+            var thePlan =
+                ["############################",
+                "#      #### #      o      ##",
+                "#                          #",
+                "#          #####           #",
+                "##         #   #    ##     #",
+                "###           ##     #     #",
+                "#           ###      #     #",
+                "#   ####                   #",
+                "#   ##       o             #",
+                "# o  #         o       ### #",
+                "#    #                     #",
+                "############################"];
+
+            /**
+             *  Constructor method
+             *  Takes two arguments, the x and y coordinates of the point, and
+             *  produces an object with x and y properties
+             */
+
+            function Point(x, y, z){
+                this.x = x;
+                this.y = y;
+            }
+            /**
+             * Takes another point as argument and returns a new point whose x
+             * and y are the sum of the x and y of the two given points
+             */
+            Point.prototype.add = function(other) {
+                return new Point(this.x + other.x, this.y + other.y);
+            };
+            Point.prototype.isEqualTo = function(other) {
+                return this.x == other.x && this.y == other.y;
+            };
+
+            /**
+             * Construtor method for Grid.
+             * @desc    Create a new grid, and define the width and height
+             * @param   int Width of the grid, in pixels
+             * @param   int Height of the grid, in pixels
+             * @return  void    Sets properties of the object
+             */
+            function Grid(width, height) {
+                this.width = width;
+                this.height = height;
+                this.cells = new Array(width * height);
+            }
+            /**
+             *  @desc   Get the value/character located at specific co-ordinates on the grid.
+             *  @param  object  Point object
+             *  @return int The value of this.cells array item  corresponding to the
+             *  key of the returned value
+             */
+            Grid.prototype.valueAt = function(point) {
+                return this.cells[point.y * this.width + point.x];
+            };
+            /**
+             *  @desc   Set the value/character located at specific co-ordinates on the grid.
+             *  @param  object  Point object
+             *  @param  string  The value/character to set at that particular point/grid cell
+             *  @return void    Sets the value of the objects property
+             */
+            Grid.prototype.setValueAt = function(point, value) {
+                this.cells[point.y * this.width + point.x] = value;
+            };
+            /**
+             *  @desc   Check tht the current value/point is within the grid's confines
+             *  @param  object      Point object
+             *  @return boolean
+             */
+            Grid.prototype.isInside = function(point) {
+                return point.x >= 0 && point.y >= 0 &&
+                    point.x < this.width && point.y < this.height;
+            };
+            /**
+             *  @desc   Set the current value based on to an from
+             *  @param  int      From
+             *  @param  int      To
+             *  @return void    Sets the value of the objects property
+             */
+            Grid.prototype.moveValue = function(from, to) {
+                this.setValueAt(to, this.valueAt(from));
+                this.setValueAt(from, undefined);
+            };
+            /**
+             *  @desc   Iterates over each cell in the grid and gets the value
+             *  @param  function    Action to perform for each point
+             *  @return mixed       Return value of the function argument
+             */
+            Grid.prototype.each = function(action) {
+                for (var y = 0; y < this.height; y++) {
+                    for (var x = 0; x < this.width; x++) {
+                        var point = new Point(x, y);
+                        action(point, this.valueAt(point));
+                    }
+                }
+            };
+            /*var testGrid = new Grid(3, 2);
+
+            testGrid.setValueAt(new Point(1, 0), "#");
+            testGrid.setValueAt(new Point(1, 1), "o");
+            testGrid.each(function(point, value) {
+                console.log(point.x, ",", point.y, ": ", value);
+            });*/
+
+
+            /**
+             *  Create a Dictionary object to hold all of the directions in
+             *  which we want to alow our bugs to move
+             */
+            var directions = new Dictionary({
+                "n":  new Point( 0, -1),
+                "ne": new Point( 1, -1),
+                "e":  new Point( 1,  0),
+                "se": new Point( 1,  1),
+                "s":  new Point( 0,  1),
+                "sw": new Point(-1,  1),
+                "w":  new Point(-1,  0),
+                "nw": new Point(-1, -1)
+            });
+
+            /**
+             * A basig bug construtor
+             */
+            function StupidBug() {};
+
+            /**
+             * The stupid bug protorype will only be allowed to move
+             * in one direction // You don;t know you're beautiful
+             *
+             * We define the action for this bug ("move") and the direction in
+             * which we want it to move ("south")
+             *
+             */
+            StupidBug.prototype.act = function(surroundings) {
+                return {
+                    type: "move",
+                    direction: "s"
+                };
+            };
+
+            var wall = {};
+
+            // Set some properties for each type of object
+            wall.character = "#";
+            StupidBug.prototype.character = "o";
+
+            /**
+             * The Terranium constructor
+             * @desc    Takes a plan (an array of strings) as argument, and
+             *          initialises its grid.
+             *  @param array    The plan
+             *  @return void    Sets the grid property of the object
+             *
+             */
+            function Terrarium(plan) {
+                var grid = new Grid(plan[0].length, plan.length);
+                for (var y = 0; y < plan.length; y++) {
+                    var line = plan[y];
+                    for (var x = 0; x < line.length; x++) {
+                        grid.setValueAt(new Point(x, y),
+                        elementFromCharacter(line.charAt(x)));
+                    }
+                }
+                this.grid = grid;
+            }
+            /**
+             *  @desc The step function which makes the bugs move
+             *  @scope  Public
+             */
+            Terrarium.prototype.step = function() {
+                forEach(this._listActingCreatures(), bind(this._processCreature, this));
+            };
+            /**
+             *  @desc Start the continuous step process
+             *  @scope  Public
+             */
+            Terrarium.prototype.start = function() {
+                if (!this.running)
+                    this.running = setInterval(bind(this.step, this), 500);
+            };
+            /**
+             *  @desc Stop the continuous step process
+             *  @scope  Public
+             */
+            Terrarium.prototype.stop = function() {
+                if (this.running) {
+                    clearInterval(this.running);
+                    this.running = null;
+                }
+            };
+            /**
+             *  Converts the plan array to a strin, adding new lines so that we
+             *  can display it as it would look laid out in 2D
+             *  @scope  Private
+             *  @return string The plan in string format
+             */
+            Terrarium.prototype._toString = function() {
+                var characters = [];
+                var endOfLine = this.grid.width - 1;
+                this.grid.each(function(point, value) {
+                    characters.push(characterFromElement(value));
+                    if (point.x == endOfLine)
+                        characters.push("\n");
+                });
+                return characters.join("");
+            };
+            /**
+             *  @desc   gather all the bugs into an array, and then process them.
+             *          This method gathers bugs, or other things that have an
+             *          act method, and stores them in objects that also contain
+             *          their current position
+             *  @scope  Private
+             *  @return array()
+             */
+            Terrarium.prototype._listActingCreatures = function() {
+                var found = [];
+                this.grid.each(function(point, value) {
+                    if (value != undefined && value.act)
+                        found.push({object: value, point: point});
+                });
+                return found;
+            };
+            /**
+             *  @desc   Get the points surronding a given point of each bug.
+             *  @scope  Private
+             *  @param center
+             *
+             */
+            Terrarium.prototype._listSurroundings = function(center) {
+
+                var result = {};
+                var grid = this.grid;
+                directions.each(function(name, direction) {
+                    var place = center.add(direction);
+
+                    if (grid.isInside(place))
+                        result[name] = characterFromElement(grid.valueAt(place));
+                    else
+                        result[name] = "#";
+                });
+                return result;
+            };
+            /**
+             *  @desc   Process the action passed to and current point of the bug
+             *          If within the bounds (this.grid.isInside) and there is
+             *          no obstruction (this.grid.valueAt(to) == undefined),
+             *          continue with the action
+             *  @scope  Private
+             *  @param Object the bug/creature object
+             *
+             */
+            Terrarium.prototype._processCreature = function(creature) {
+
+                var surroundings = this._listSurroundings(creature.point);
+                var action = creature.object.act(surroundings);
+                if (action.type == "move" && directions.contains(action.direction)) {
+                    var to = creature.point.add(directions.lookup(action.direction));
+                    if (this.grid.isInside(to) && this.grid.valueAt(to) == undefined)
+                        this.grid.moveValue(creature.point, to);
+                }
+                else {
+                    throw new Error("Unsupported action: " + action.type);
+                }
+            };
+            /**
+             *  Set the element we want to appear in a cell based on the character
+             *  in the grid array
+             *
+             *  @param string    Character
+             *  @return  mixed
+             */
+            function elementFromCharacter(character) {
+                if (character == " ")
+                    return undefined;
+                else if (character == "#")
+                    return wall;
+                else if (character == "o")
+                    return new StupidBug();
+            }
+            /**
+             *  Get the character based on the element
+             *
+             *  @param object    The type of element we want to query
+             *  @return  mixed
+             */
+            function characterFromElement(element) {
+                if (element == undefined)
+                    return " ";
+                else
+                    return element.character;
+            }
+
+            var terrarium = new Terrarium(thePlan);
+
+
+        </script>
+
+        <div>TODO write content</div>
+    </body>
+</html>
