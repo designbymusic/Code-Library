@@ -11,16 +11,17 @@ function debug($a) {
 }
 
 $Twitter  = new Twitter(1000);
-$tweets     = $Twitter->UserGetTweets();
+$tweets     = $Twitter->getTweetsFromList();
+#debug($tweets);
 ?>
-<h1><cite><a href="http://www.twitter.com/<?php echo $tweets[0]['data']->user->screen_name;?>">@<?php echo $tweets[0]['data']->user->screen_name;?>&rsquo;s tweets</a></cite></h1>
+
 <ul>
 <?php foreach($tweets as $t):?>
 <li>
     <article>
         <blockquote>
             <p><?php echo $t['data']->text;?></p>
-
+            <cite><a href="<?php echo $t['data']->user->url;?>"><?php echo $t['data']->user->screen_name;?></a></cite>
            </blockquote>
         </article>
 </li>
