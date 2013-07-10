@@ -2,6 +2,7 @@
 
 @section('content')
 <h2>Users</h2>
+<p><?php $name = Input::get('name');echo $name;?></p>
 <table>
     <thead>
         <tr>
