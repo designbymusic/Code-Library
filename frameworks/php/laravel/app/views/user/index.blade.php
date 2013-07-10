@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Users</h2>
-<p><?php $name = Input::get('name');echo $name;?></p>
+<p>{{ HTML::link('users/create', 'New user'); }}</p>
 <table>
     <thead>
         <tr>

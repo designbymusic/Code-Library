@@ -52,11 +52,11 @@ App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
 });
-App::missing(function($exception)
+/*App::missing(function($exception)
 {
     Log::info('test 404 error log message.');
     return Response::view('errors.missing', array(), 404);
-});
+});*/
 
 
 /*

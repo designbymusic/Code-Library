@@ -22,6 +22,7 @@ Route::controller('users', 'UserController');
 #Route::resource('user', 'UserController');
 #Route::get('users', 'UserController@getIndex');
 #Route::get('user/{id}/profile', 'UserController@showProfile');
+#Route::get('user/update', 'UserController@update');
 
 
 Route::resource('photo', 'PhotoController');

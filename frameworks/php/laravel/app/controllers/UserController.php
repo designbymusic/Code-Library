@@ -2,6 +2,7 @@
 
 class UserController extends BaseController {
 
+
     /**
      * Instantiate a new UserController instance.
      */
@@ -15,7 +16,7 @@ class UserController extends BaseController {
     /**
      * Show the profile for the given user.
      */
-    public function showProfile($id) {
+    public function getProfile($id) {
         $user = User::find($id);
         return View::make('user.profile', array('user' => $user));
     }
@@ -28,8 +29,20 @@ class UserController extends BaseController {
         return View::make('user.index')->with('users', $users);
     }
 
-    public function postProfile() {
-        //
+    public function getCreate() {
+        return View::make('user.create', array());
     }
+    public function postCreate() {
 
+        $user  = new User;
+        $user->name     = Input::get('name');
+        $user->email    = Input::get('email');
+        $user->save();
+        Session::flash('message', 'User '.$user->name.' has been created');
+        return Redirect::to('users')->withInput();
+    }    
+
+    public function update(){
+        
+    }
 }
