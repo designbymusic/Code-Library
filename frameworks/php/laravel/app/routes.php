@@ -18,5 +18,6 @@ Route::get('/', function(){
 #Route::get('users', 'UserController@getIndex');
 
 Route::get('users', function(){
-    return 'Users!';
+    $users = User::all();
+    return View::make('users')->with('users', $users);
 });
