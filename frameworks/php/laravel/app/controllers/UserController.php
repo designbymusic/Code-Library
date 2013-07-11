@@ -35,9 +35,7 @@ class UserController extends BaseController {
     public function postCreate() {
 
         $user  = new User;
-        $user->name     = Input::get('name');
-        $user->email    = Input::get('email');
-        $user->save();
+        $user->create(Input::all());
         Session::flash('message', 'User '.$user->name.' has been created');
         return Redirect::to('users')->withInput();
     }    
