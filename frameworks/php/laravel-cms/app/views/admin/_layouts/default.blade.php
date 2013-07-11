@@ -31,7 +31,7 @@
     
  
     <hr>
- 
+    
     @yield('main')
     </div>
 </div>

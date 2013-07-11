@@ -4,6 +4,11 @@
  
     <h2>Edit page &raquo; {{ $page->title }}</h2>
     {{ Notification::showAll() }}
+    @if($errors->has())
+        @foreach ($errors->all() as $error)
+            <div class="alert error">{{ $error }}</div>
+        @endforeach
+    @endif    
     {{ Form::model($page, array('method' => 'put', 'route' => array('admin.pages.update', $page->id))) }}
  
         <div class="control-group">
