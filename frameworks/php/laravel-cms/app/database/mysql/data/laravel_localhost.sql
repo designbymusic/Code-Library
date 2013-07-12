@@ -9,7 +9,7 @@
  Target Server Version : 50610
  File Encoding         : utf-8
 
- Date: 07/11/2013 17:29:38 PM
+ Date: 07/12/2013 12:03:55 PM
 */
 
 SET NAMES utf8;
@@ -35,7 +35,7 @@ CREATE TABLE `articles` (
 --  Records of `articles`
 -- ----------------------------
 BEGIN;
-INSERT INTO `articles` VALUES ('16', 'First post', 'first-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('17', '2nd post', '2nd-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('18', 'Third post', 'third-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11');
+INSERT INTO `articles` VALUES ('16', 'First post', 'first-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '19', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('17', '2nd post', '2nd-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '19', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('18', 'Third post', 'third-post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', null, '19', '2013-07-11 13:40:11', '2013-07-11 13:40:11');
 COMMIT;
 
 -- ----------------------------
@@ -94,7 +94,7 @@ CREATE TABLE `pages` (
 --  Records of `pages`
 -- ----------------------------
 BEGIN;
-INSERT INTO `pages` VALUES ('1', 'Welcome', 'welcome', 'Welcome to the site', '19', '2013-07-11 13:40:11', '2013-07-11 15:46:08'), ('2', 'About us', 'about-us', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('3', 'Contact', 'contact', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('4', 'New post', 'new-post', 'Hello, this is a new post.', '19', '2013-07-11 14:31:14', '2013-07-11 14:57:08');
+INSERT INTO `pages` VALUES ('1', 'Welcome', 'welcome', 'Welcome to the site. This page is powered by our little CMS.', '19', '2013-07-11 13:40:11', '2013-07-12 10:49:06'), ('2', 'About us', 'about-us', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('3', 'Contact', 'contact', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '1', '2013-07-11 13:40:11', '2013-07-11 13:40:11'), ('4', 'New post', 'new-post', 'Hello, this is a new post.', '19', '2013-07-11 14:31:14', '2013-07-11 14:57:08');
 COMMIT;
 
 -- ----------------------------
@@ -150,7 +150,7 @@ CREATE TABLE `users` (
 --  Records of `users`
 -- ----------------------------
 BEGIN;
-INSERT INTO `users` VALUES ('19', 'admin@admin.com', '$2y$10$avmBNCp/OJB/vKfLJnjmleZIn69/T21/uwecZMqWM5AT7O4h1LtKe', null, '1', null, null, '2013-07-11 15:34:11', '$2y$10$VHShiPvbVmxifVk3eq2o/uvOY0tV0EIpEHuDwnKsuGFowZngzRgJi', null, 'John', 'McClane', '2013-07-11 13:40:11', '2013-07-11 15:34:11');
+INSERT INTO `users` VALUES ('19', 'admin@admin.com', '$2y$10$avmBNCp/OJB/vKfLJnjmleZIn69/T21/uwecZMqWM5AT7O4h1LtKe', null, '1', null, null, '2013-07-12 09:37:36', '$2y$10$yZueeVYAljLsE.TqNKrQ..Bplq5essgPpDc45HK3xfg7KYLMgGUyi', null, 'John', 'McClane', '2013-07-11 13:40:11', '2013-07-12 09:37:36');
 COMMIT;
 
 -- ----------------------------
