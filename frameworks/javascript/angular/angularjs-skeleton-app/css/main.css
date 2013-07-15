@@ -28,10 +28,6 @@ h1, h2, h3 {
     background-color: #333;
     color: #FFF;
     margin-bottom: 10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
 }
 .search-box label {
     font-weight: bold;
@@ -53,10 +49,6 @@ h1, h2, h3 {
     background-color: #333;
     color: #FFF;
     margin-top: 10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .episode-list .fulldate {
@@ -82,10 +74,6 @@ h1, h2, h3 {
     background-color: #e1e1e1;
     color: #333;
     font-size: 16px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .show-info li {
