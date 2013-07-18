@@ -18,3 +18,9 @@ Basic libraries for connecting to different APIS. Includes basic flat file cache
 
 -   Laravel:
     Includes bits of work done while following the documentation at http://laravel.com/docs
+
+####Tools
+
+#####PHP
+
+-Adaptive Images
