@@ -1,0 +1,77 @@
+angular.callbacks._0({
+                    "0":{
+                        "id":"4",
+                        "vid":"4",
+                        "uid":"4",
+                        "created":"1371209128",
+                        "updated":"1376391760",
+                        "name":"BT River of Music [SAMPLE]",
+                        "url":"projects\/folk-nations-sample\/bt-river-of-music-%5Bsample%5D",
+                        "intro":"The British Council curated a series of high...",
+                        "lat":"53.6021",
+                        "lon":"-2.34177",
+                        "location_data":{
+                                "wkt":"POINT (-2.3417683 53.6020955)",
+                                "geo_type":"point",
+                                "lat":"53.6021",
+                                "lon":"-2.34177",
+                                "left":"-2.34177",
+                                "top":"53.6021",
+                                "right":"-2.34177",
+                                "bottom":"53.6021",
+                                "srid":null,
+                                "accuracy":null,
+                                "source":null
+                            }
+                        },
+                        "1":{
+                        "id":"4",
+                        "vid":"4",
+                        "uid":"4",
+                        "created":"1371209128",
+                        "updated":"1376391760",
+                        "name":"Bleu comme une orange",
+                        "url":"projects\/folk-nations-sample\/bt-river-of-music-%5Bsample%5D",
+                        "intro":"Taking British music to the French",
+                        "lat":"48.888612",
+                        "lon":"2.3169552",
+                        "location_data":{
+                                "wkt":"POINT (-2.3417683 53.6020955)",
+                                "geo_type":"point",
+                                "lat":"53.6021",
+                                "lon":"-2.34177",
+                                "left":"-2.34177",
+                                "top":"53.6021",
+                                "right":"-2.34177",
+                                "bottom":"53.6021",
+                                "srid":null,
+                                "accuracy":null,
+                                "source":null
+                            }
+                        },
+                        "2":{
+                        "id":"4",
+                        "vid":"4",
+                        "uid":"4",
+                        "created":"1371209128",
+                        "updated":"1376391760",
+                        "name":"The British council",
+                        "url":"projects\/folk-nations-sample\/bt-river-of-music-%5Bsample%5D",
+                        "intro":"The British Council curated a series of high...",
+                        "lat":"51.5069986",
+                        "lon":"-0.1297437",
+                        "location_data":{
+                            "wkt":"POINT (-2.3417683 53.6020955)",
+                            "geo_type":"point",
+                            "lat":"53.6021",
+                            "lon":"-2.34177",
+                            "left":"-2.34177",
+                            "top":"53.6021",
+                            "right":"-2.34177",
+                            "bottom":"53.6021",
+                            "srid":null,
+                            "accuracy":null,
+                            "source":null
+                        }
+}
+});

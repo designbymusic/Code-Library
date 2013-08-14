@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6745a40e-8b89-4cdb-8aa7-f7b825889423" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/changelog.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/angulargm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/prettify-jsdoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/container.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/details.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/example.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/examples.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/exceptions.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/fires.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/layout.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/mainpage.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/members.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/method.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/params.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/properties.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/returns.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/source.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/tutorial.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/type.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/pages.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/controllers/angulargmMapController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmInfoWindow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmMarkers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/services/angulargmContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/services/angulargmUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular-scenario.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/controllers/angulargmMapController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmInfoWindowSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmMapSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmMarkersSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/services/angulargmContainerSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/services/angulargmUtilsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/maps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/controllers/MapCtrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/controllers/markers.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/ui-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/gruntFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/googlemaps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/mapSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/ui-map.js" afterPath="" />
+    </list>
+    <ignored path="codelib.localhost.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376478035070" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="codelib.localhost" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2312757">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="." />
+      <path value="/usr/local/php5/lib/php" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="22" />
+    <option name="width" value="2540" />
+    <option name="height" value="1361" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="fileColors" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="codelib.localhost" serverId="973e2612-46d4-492f-b273-7f51fb334274">
+    <servers>
+      <server id="36e53dcf-7379-4167-8785-357438b87b58">
+        <serverdata />
+      </server>
+      <server id="52523d54-51c5-4b2c-a9e5-18a9559c0aa0">
+        <serverdata />
+      </server>
+      <server id="7a51d847-17f0-485a-938e-b15cb23e1712">
+        <serverdata />
+      </server>
+      <server id="8e1d9f25-9fe2-4109-8493-9a68d9d260f5">
+        <serverdata />
+      </server>
+      <server id="8f29c23e-baab-4df5-8043-6d3f172e7a62">
+        <serverdata />
+      </server>
+      <server id="973e2612-46d4-492f-b273-7f51fb334274">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6745a40e-8b89-4cdb-8aa7-f7b825889423" name="Default" comment="" />
+      <created>1376478029763</created>
+      <updated>1376478029763</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="22" width="2540" height="1361" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2312757">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
