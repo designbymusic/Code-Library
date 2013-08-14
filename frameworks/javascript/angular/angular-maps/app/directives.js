@@ -1,5 +1,5 @@
 // - Documentation: https://developers.google.com/maps/documentation/
-app.directive("appMap", function () {
+app.directive("appMap", function ($document) {
     return {
         restrict: "E",
         replace: true,
@@ -13,9 +13,12 @@ app.directive("appMap", function () {
             mapTypeId: "@",     // Type of tile to show on the map (roadmap, satellite, hybrid, terrain).
             panControl: "@",    // Whether to show a pan control on the map.
             zoomControl: "@",   // Whether to show a zoom control on the map.
-            scaleControl: "@"   // Whether to show scale control on the map.
+            scaleControl: "@",   // Whether to show scale control on the map.
+            location: '=',
+            filters: '='
         },
         link: function (scope, element, attrs) {
+
             var toResize, toCenter;
             var map;
             var currentMarkers;
@@ -37,9 +40,15 @@ app.directive("appMap", function () {
                     map.setZoom(scope.zoom * 1);
             });
             scope.$watch("center", function () {
-                if (map && scope.center)
+                if (map && scope.center){
                     map.setCenter(getLocation(scope.center));
+                }
             });
+
+            scope.$watch('filters', function() {
+                console.log('here')
+                console.log("I see a data change!");
+            }, true);
 
             // update the control
             function updateControl() {
@@ -98,18 +107,29 @@ app.directive("appMap", function () {
                             currentMarkers[i] = m.setMap(null);
                         }
                     }
-
                     // create new markers
                     currentMarkers = [];
                     var markers = scope.markers;
                     if (angular.isString(markers)) markers = scope.$eval(scope.markers);
                     for (var i = 0; i < markers.length; i++) {
+
                         var m = markers[i];
                         var loc = new google.maps.LatLng(m.lat, m.lon);
                         var mm = new google.maps.Marker({ position: loc, map: map, title: m.name });
+                        showInfoWindow(mm, i)
                         currentMarkers.push(mm);
                     }
                 }
+            }
+
+            function showInfoWindow(marker, index){
+                var infowindow = new google.maps.InfoWindow({
+                    content: marker.title
+                });
+               google.maps.event.addListener(marker, 'click', function() {
+                    map.setCenter(marker.getPosition());
+                    infowindow.open(marker.get('map'), marker);
+               });
             }
 
             // convert current location to Google maps location

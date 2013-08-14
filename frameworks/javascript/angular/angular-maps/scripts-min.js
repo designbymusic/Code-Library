@@ -14,7 +14,7 @@ var app = angular.module("app", []);
 ********************************************** */
 
 // - Documentation: https://developers.google.com/maps/documentation/
-app.directive("appMap", function () {
+app.directive("appMap", function ($document) {
     return {
         restrict: "E",
         replace: true,
@@ -28,9 +28,12 @@ app.directive("appMap", function () {
             mapTypeId: "@",     // Type of tile to show on the map (roadmap, satellite, hybrid, terrain).
             panControl: "@",    // Whether to show a pan control on the map.
             zoomControl: "@",   // Whether to show a zoom control on the map.
-            scaleControl: "@"   // Whether to show scale control on the map.
+            scaleControl: "@",   // Whether to show scale control on the map.
+            location: '=',
+            filters: '='
         },
         link: function (scope, element, attrs) {
+
             var toResize, toCenter;
             var map;
             var currentMarkers;
@@ -52,9 +55,15 @@ app.directive("appMap", function () {
                     map.setZoom(scope.zoom * 1);
             });
             scope.$watch("center", function () {
-                if (map && scope.center)
+                if (map && scope.center){
                     map.setCenter(getLocation(scope.center));
+                }
             });
+
+            scope.$watch('filters', function() {
+                console.log('here')
+                console.log("I see a data change!");
+            }, true);
 
             // update the control
             function updateControl() {
@@ -113,18 +122,29 @@ app.directive("appMap", function () {
                             currentMarkers[i] = m.setMap(null);
                         }
                     }
-
                     // create new markers
                     currentMarkers = [];
                     var markers = scope.markers;
                     if (angular.isString(markers)) markers = scope.$eval(scope.markers);
                     for (var i = 0; i < markers.length; i++) {
+
                         var m = markers[i];
                         var loc = new google.maps.LatLng(m.lat, m.lon);
                         var mm = new google.maps.Marker({ position: loc, map: map, title: m.name });
+                        showInfoWindow(mm, i)
                         currentMarkers.push(mm);
                     }
                 }
+            }
+
+            function showInfoWindow(marker, index){
+                var infowindow = new google.maps.InfoWindow({
+                    content: marker.title
+                });
+               google.maps.event.addListener(marker, 'click', function() {
+                    map.setCenter(marker.getPosition());
+                    infowindow.open(marker.get('map'), marker);
+               });
             }
 
             // convert current location to Google maps location
@@ -139,19 +159,27 @@ app.directive("appMap", function () {
 
 
 /* **********************************************
+     Begin services.js
+********************************************** */
+
+
+
+/* **********************************************
      Begin controllers.js
 ********************************************** */
 
 app.controller("mapController", function ($scope, $http) {
+// Set up the default filters.
 
+    $scope.filters = {};
     $scope.projects = [];
 
-    // current location
-    // 51.5069986, -0.1297437
+    $scope.location = null;
     $scope.loc = {
         lat: 51.5069986,
         lon: -0.1297437
     };
+
     $scope.gotoCurrentLocation = function () {
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -162,17 +190,42 @@ app.controller("mapController", function ($scope, $http) {
         }
         return false;
     };
-    $scope.gotoLocation = function (lat, lon) {
-        if ($scope.lat != lat || $scope.lon != lon) {
-            $scope.loc = { lat: lat, lon: lon };
+    $scope.gotoLocation = function (m) {
+
+        if ($scope.lat != m.lat || $scope.lon != m.lon) {
+            $scope.loc = { lat: m.lat, lon: m.lon };
             if (!$scope.$$phase) $scope.$apply("loc");
         }
-    };
 
+        $scope.curr_item = m;
+        var infowindow = new google.maps.InfoWindow({
+            content: m.title
+        });
+    };
+    $scope.setFilter = function (type, value) {
+       // console.log(type, value);
+       // console.log($scope.projects)
+        $scope.filters = {
+            type: type,
+            filter: value
+        };
+        for(var project_key in $scope.projects){
+            for(var key in $scope.projects[project_key]){
+                if(key == type){
+                    if($scope.projects[project_key][type] == value){
+                        console.log('match')
+                    }else{
+                        var index = $scope.projects.indexOf(project_key);
+                        $scope.projects.splice(index, 1);
+                    }
+                }
+            }
+        }
+        console.log($scope.projects)
+    }
     // geo-coding
     $scope.search = "";
     $scope.geoCode = function () {
-
         if ($scope.search && $scope.search.length > 0) {
             if (!this.geocoder) this.geocoder = new google.maps.Geocoder();
             this.geocoder.geocode({ 'address': $scope.projects }, function (results, status) {
@@ -200,6 +253,8 @@ app.controller("mapController", function ($scope, $http) {
         });
     };
 });
+
+
 // formats a number as a latitude (e.g. 40.46... => "40°27'44"N")
 app.filter('lat', function () {
     return function (input, decimals) {

@@ -2,86 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6745a40e-8b89-4cdb-8aa7-f7b825889423" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/changelog.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/conf.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/publish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/lang-css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/scripts/prettify/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/angulargm.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/jsdoc-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/prettify-jsdoc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/static/styles/prettify-tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/container.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/details.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/example.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/examples.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/exceptions.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/fires.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/layout.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/mainpage.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/members.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/method.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/params.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/properties.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/returns.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/source.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/tutorial.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/jsdoc/template/tmpl/type.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/pages.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/controllers/angulargmMapController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmInfoWindow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmMap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/directives/gmMarkers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/services/angulargmContainer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/src/services/angulargmUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/lib/angular/version.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/controllers/angulargmMapController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmInfoWindowSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmMapSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/directives/gmMarkersSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/services/angulargmContainerSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/angular-gm-master/test/unit/services/angulargmUtilsSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/controllers/MapCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/controllers/markers.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/event.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/scripts/ui-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/demo/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/gruntFile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/googlemaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/test/mapSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/Google-maps/ui-map-master/ui-map.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/scripts-min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/scripts-min.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/scripts-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codelib.localhost.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376478035070" ignored="false" />
+    <file path="/directives.js" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376494034083" ignored="false" />
+    <file path="/my-map.html" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376490037834" ignored="false" />
+    <file path="/controllers.js" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376495472752" ignored="false" />
+    <file path="/data.json" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376487044359" ignored="false" />
+    <file path="/filter-markers.html" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376494339289" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +38,7 @@
     <favorites_list name="codelib.localhost" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2312757">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -123,6 +51,18 @@
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" />
+      </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
@@ -213,84 +153,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelib.localhost" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -329,6 +191,11 @@
       </server>
     </servers>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps" />
+    </key>
+  </component>
   <component name="RunManager">
     <list size="0" />
   </component>
@@ -343,13 +210,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="2540" height="1361" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -425,9 +292,46 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1312" selection-end="1561" vertical-scroll-proportion="0.64705884">
+          <folding>
+            <element signature="n#style#0;n#app-map#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="42" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.59327734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="36" selection-start="1669" selection-end="1669" vertical-scroll-proportion="0.4888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2312757">
+        <state line="17" column="23" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.19917695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="100" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.7411765">
           <folding />
         </state>
       </provider>

@@ -47,16 +47,11 @@
     </div>
     <!-- list of projects -->
     <div class="container-fluid">
-        <div location="{{m.location}}" class="span3 btn"
-             ng-repeat="m in projects | filter:locationFilter"
-             ng-click="gotoLocation(m)"
-             >
-            <b>{{m.name}}</b> ({{m.location}}): {{m.intro}}
-        </div>
+        <h4>Filter markers</h4>
         <div class="filters">
-            <span class="label label-inverse location" ng-click="locationFilter = {location: ''}">All</span>
-            <span class="label label-inverse location" ng-click="locationFilter = {location: 'France'}">France</span>
-            <span class="label label-inverse location" ng-click="locationFilter = {location: 'United Kingdom'}">United Kingdom</span>
+            <input type="button" class="label label-inverse location" ng-click="setFilter('location','All')" value="All" /> |
+            <input type="button" class="label label-inverse location" ng-click="setFilter('location','France')" value="France" /> |
+            <input type="button" class="label label-inverse location" ng-click="setFilter('location','United Kingdom')" value="United Kingdom" />
         </div>
     </div>
 </div>

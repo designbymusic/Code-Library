@@ -1,13 +1,15 @@
 app.controller("mapController", function ($scope, $http) {
+// Set up the default filters.
 
+    $scope.filters = {};
     $scope.projects = [];
 
-    // current location
-    // 51.5069986, -0.1297437
+    $scope.location = null;
     $scope.loc = {
         lat: 51.5069986,
         lon: -0.1297437
     };
+
     $scope.gotoCurrentLocation = function () {
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -18,17 +20,42 @@ app.controller("mapController", function ($scope, $http) {
         }
         return false;
     };
-    $scope.gotoLocation = function (lat, lon) {
-        if ($scope.lat != lat || $scope.lon != lon) {
-            $scope.loc = { lat: lat, lon: lon };
+    $scope.gotoLocation = function (m) {
+
+        if ($scope.lat != m.lat || $scope.lon != m.lon) {
+            $scope.loc = { lat: m.lat, lon: m.lon };
             if (!$scope.$$phase) $scope.$apply("loc");
         }
-    };
 
+        $scope.curr_item = m;
+        var infowindow = new google.maps.InfoWindow({
+            content: m.title
+        });
+    };
+    $scope.setFilter = function (type, value) {
+       // console.log(type, value);
+       // console.log($scope.projects)
+        $scope.filters = {
+            type: type,
+            filter: value
+        };
+        for(var project_key in $scope.projects){
+            for(var key in $scope.projects[project_key]){
+                if(key == type){
+                    if($scope.projects[project_key][type] == value){
+                        console.log('match')
+                    }else{
+                        var index = $scope.projects.indexOf(project_key);
+                        $scope.projects.splice(index, 1);
+                    }
+                }
+            }
+        }
+        console.log($scope.projects)
+    }
     // geo-coding
     $scope.search = "";
     $scope.geoCode = function () {
-
         if ($scope.search && $scope.search.length > 0) {
             if (!this.geocoder) this.geocoder = new google.maps.Geocoder();
             this.geocoder.geocode({ 'address': $scope.projects }, function (results, status) {
@@ -56,6 +83,8 @@ app.controller("mapController", function ($scope, $http) {
         });
     };
 });
+
+
 // formats a number as a latitude (e.g. 40.46... => "40°27'44"N")
 app.filter('lat', function () {
     return function (input, decimals) {
