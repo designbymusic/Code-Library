@@ -2,24 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6745a40e-8b89-4cdb-8aa7-f7b825889423" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/scripts-min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/scripts-min.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/scripts-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/basic-map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/directives.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/README.md" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/app.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/controllers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/directives.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/services.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/data.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/filter-markers.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/min.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/my-map.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/scripts-min.js" afterPath="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/scripts-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codelib.localhost.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376478035070" ignored="false" />
-    <file path="/directives.js" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376494034083" ignored="false" />
+    <file path="/directives.js" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376497956564" ignored="false" />
     <file path="/my-map.html" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376490037834" ignored="false" />
     <file path="/controllers.js" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376495472752" ignored="false" />
     <file path="/data.json" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376487044359" ignored="false" />
     <file path="/filter-markers.html" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376494339289" ignored="false" />
+    <file path="/basic-map.html" changelist="6745a40e-8b89-4cdb-8aa7-f7b825889423" time="1376497463827" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +43,17 @@
     <favorites_list name="codelib.localhost" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="74" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.4164609">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -62,6 +77,9 @@
         <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js" />
         <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html" />
         <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/basic-map.html" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/controllers.js" />
+        <option value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/directives.js" />
       </list>
     </option>
   </component>
@@ -153,6 +171,182 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelib.localhost" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -162,6 +356,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="fileColors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -193,7 +389,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app" />
       <recent name="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01" />
     </key>
   </component>
   <component name="RunManager">
@@ -210,13 +410,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="2540" height="1361" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -292,46 +492,76 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/my-map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1312" selection-end="1561" vertical-scroll-proportion="0.64705884">
-          <folding>
-            <element signature="n#style#0;n#app-map#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/data.json">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="42" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.59327734">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/services.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/controllers.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="36" selection-start="1669" selection-end="1669" vertical-scroll-proportion="0.4888889">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/app/directives.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/filter-markers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.19917695">
+        <state line="51" column="100" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.7411765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/filter-markers.html">
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/my-map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="100" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.7411765">
+        <state line="39" column="12" selection-start="0" selection-end="2042" vertical-scroll-proportion="0.4764706">
+          <folding>
+            <element signature="n#style#0;n#app-map#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.054320987">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/basic-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="88" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.6487395">
+          <folding>
+            <element signature="n#style#0;n#app-map#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/01/app/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="874" selection-end="874" vertical-scroll-proportion="0.25349793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/javascript/angular/angular-maps/02/app/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="74" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.4164609">
           <folding />
         </state>
       </provider>
